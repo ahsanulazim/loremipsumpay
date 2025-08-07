@@ -3,9 +3,9 @@ import { MdArrowOutward } from "react-icons/md";
 
 export default function Hero() {
     return (
-        <div className="hero">
-            <div className="hero-content flex-col-reverse md:flex-row-reverse max-w-[1320px] mx-auto justify-between gap-5 md:gap-10 lg:gap-40 xl:gap-60 py-6 xs:py-10 md:py-15">
-                <div className="relative">
+        <div className="hero place-items-stretch block">
+            <div className="hero-content flex-col-reverse md:flex-row-reverse max-w-[1320px] mx-auto justify-between gap-5 md:gap-10 lg:gap-40 xl:gap-60 py-6 xs:py-10 md:py-15 lg:py-20">
+                <div className="relative md:mr-16">
                     <Image
                         src="/hero-chart.png"
                         className="w-full h-auto" width={420} height={200} alt="hero Image 1"
@@ -16,8 +16,8 @@ export default function Hero() {
                     />
                 </div>
                 <div className="text-center md:text-left">
-                    <h1 className="text-3xl leading-9 xs:text-5xl xs:leading-12 sm:text-6xl sm:leading-16"><strong className="font-bold">Get paid early</strong><br /> save automatically <br />all your pay.</h1>
-                    <p className="py-6 text-xs xs:text-base text-gray-500">
+                    <h1 className="text-3xl leading-9 xs:text-5xl xs:leading-12 sm:text-6xl sm:leading-16 lg:text-7xl lg:leading-20 text-main"><strong className="font-bold">Get paid early</strong><br /> save automatically <br />all your pay.</h1>
+                    <p className="py-6 text-xs xs:text-xl text-gray-500">
                         Support small business with simple invoicing.<br /> powerful integrations, and cash flow management tools.
                     </p>
                     <div className="join mb-8">
