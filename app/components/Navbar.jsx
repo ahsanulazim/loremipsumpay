@@ -1,5 +1,6 @@
 import Link from "next/link";
 import logo from "../logo.svg";
+import mobileLogo from "../favicon.svg";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -24,7 +25,8 @@ export default function Navbar() {
                             {nav}
                         </ul>
                     </div>
-                    <Link href="/"><Image src={logo} height={25} alt="Logo" /></Link>
+                    <Link href="/" className="hidden md:block"><Image src={logo} height={25} alt="Logo" /></Link>
+                    <Link href="/" className="md:hidden"><Image src={mobileLogo} height={25} alt="Logo" /></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

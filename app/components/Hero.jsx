@@ -4,7 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 export default function Hero() {
     return (
         <div className="hero">
-            <div className="hero-content flex-col-reverse md:flex-row-reverse max-w-[1320px] mx-auto justify-between gap-5 md:gap-20 lg:gap-40 py-6 xs:py-10 md:py-15">
+            <div className="hero-content flex-col-reverse md:flex-row-reverse max-w-[1320px] mx-auto justify-between gap-5 md:gap-10 lg:gap-40 py-6 xs:py-10 md:py-15">
                 <div className="relative">
                     <Image
                         src="/hero-chart.png"
