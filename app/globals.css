@@ -27,6 +27,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-helvetica-display: 'Helvetica Now Display', sans-serif;
 }
 
 @theme {
@@ -42,5 +43,5 @@
 }
 
 body {
-  font-family: 'Helvetica Now Display', sans-serif;
+  font-family: var(--font-helvetica-display);
 }

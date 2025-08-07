@@ -17,7 +17,7 @@ export default function Hero() {
                 </div>
                 <div className="text-center md:text-left">
                     <h1 className="text-3xl leading-9 xs:text-5xl xs:leading-12 sm:text-6xl sm:leading-16"><strong className="font-bold">Get paid early</strong><br /> save automatically <br />all your pay.</h1>
-                    <p className="py-6 text-xs xs:text-md text-gray-500">
+                    <p className="py-6 text-xs xs:text-base text-gray-500">
                         Support small business with simple invoicing.<br /> powerful integrations, and cash flow management tools.
                     </p>
                     <div className="join mb-8">
