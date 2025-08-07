@@ -4,15 +4,15 @@ import { MdArrowOutward } from "react-icons/md";
 export default function Hero() {
     return (
         <div className="hero">
-            <div className="hero-content flex-col-reverse md:flex-row-reverse max-w-[1320px] mx-auto justify-between gap-5 md:gap-10 lg:gap-40 py-6 xs:py-10 md:py-15">
+            <div className="hero-content flex-col-reverse md:flex-row-reverse max-w-[1320px] mx-auto justify-between gap-5 md:gap-10 lg:gap-40 xl:gap-60 py-6 xs:py-10 md:py-15">
                 <div className="relative">
                     <Image
                         src="/hero-chart.png"
-                        className="max-w-sm" width={350} height={200} alt="hero Image 1"
+                        className="w-full h-auto" width={420} height={200} alt="hero Image 1"
                     />
                     <Image
                         src="/hero-policy.png"
-                        className="hidden md:block max-w-sm absolute top-0 -right-10" width={250} height={200} alt="hero Image 1"
+                        className="hidden md:block max-w-sm absolute -top-10 -right-20" width={250} height={200} alt="hero Image 1"
                     />
                 </div>
                 <div className="text-center md:text-left">
@@ -39,7 +39,7 @@ export default function Hero() {
                             </label>
                             <div className="validator-hint hidden">Enter valid email address</div>
                         </div>
-                        <button className="btn btn-neutral bg-second border-second shadow-none join-item">Get Started <MdArrowOutward /></button>
+                        <button className="btn btn-neutral bg-second border-second shadow-none join-item"><span className="hidden xs:block"> Get Started </span><MdArrowOutward /></button>
                     </div>
                     <div className="flex justify-center flex-wrap md:justify-start gap-x-4">
                         <svg className="min-w-9" width="120" height="40" viewBox="0 0 209 40" fill="none" xmlns="http://www.w3.org/2000/svg">

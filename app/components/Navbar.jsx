@@ -16,7 +16,7 @@ export default function Navbar() {
             <div className="navbar max-w-[1320px] mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                        <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                         </div>
                         <ul
@@ -28,14 +28,14 @@ export default function Navbar() {
                     <Link href="/" className="hidden md:block"><Image src={logo} height={25} alt="Logo" /></Link>
                     <Link href="/" className="md:hidden"><Image src={mobileLogo} height={25} alt="Logo" /></Link>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center hidden md:flex">
                     <ul className="menu menu-horizontal px-1">
                         {nav}
                     </ul>
                 </div>
                 <div className="navbar-end gap-x-2.5">
                     <Link href="/login" className=""><button className="btn rounded-md">Login</button></Link>
-                    <Link href="/registration" className=""><button className="btn bg-second text-white border-second rounded-md hover:bg-main hover:border-main">Sign Up</button></Link>
+                    <Link href="/registration" className=""><button className="btn bg-second text-white border-second rounded-md hover:bg-main hover:border-main whitespace-nowrap">Sign Up</button></Link>
                 </div>
             </div>
         </header>
