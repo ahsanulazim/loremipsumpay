@@ -8,7 +8,7 @@ export default function Hero() {
                 <div className="relative md:mr-16">
                     <Image
                         src="/hero-chart.png"
-                        className="w-full h-auto" width={420} height={200} alt="hero Image 1"
+                        className="min-w-80 w-full h-auto" width={420} height={200} alt="hero Image 1"
                     />
                     <Image
                         src="/hero-policy.png"
@@ -22,7 +22,7 @@ export default function Hero() {
                     </p>
                     <div className="join mb-8">
                         <div>
-                            <label className="input validator join-item">
+                            <label className="input sm:input-lg validator join-item">
                                 <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <g
                                         strokeLinejoin="round"
@@ -39,7 +39,7 @@ export default function Hero() {
                             </label>
                             <div className="validator-hint hidden">Enter valid email address</div>
                         </div>
-                        <button className="btn btn-neutral bg-second border-second shadow-none join-item"><span className="hidden xs:block"> Get Started </span><MdArrowOutward /></button>
+                        <button className="btn sm:btn-lg btn-neutral bg-second border-second shadow-none join-item"><span className="hidden xs:block"> Get Started </span><MdArrowOutward /></button>
                     </div>
                     <div className="flex justify-center flex-wrap md:justify-start gap-x-4">
                         <svg className="min-w-9" width="120" height="40" viewBox="0 0 209 40" fill="none" xmlns="http://www.w3.org/2000/svg">

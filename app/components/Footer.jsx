@@ -10,8 +10,8 @@ export default function Footer() {
 
     return (
         <>
-            <footer className=" text-base-content p-10">
-                <div className="footer sm:footer-horizontal max-w-[1320px] mx-auto p-2">
+            <footer className=" text-base-content py-10">
+                <div className="footer sm:footer-horizontal max-w-[1320px] mx-auto p-4">
                     <aside>
                         <Image src={logo} height={30} alt="Logo" />
 
