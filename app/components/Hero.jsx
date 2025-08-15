@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MdArrowOutward } from "react-icons/md";
+import Subscribe from "./Subscribe";
 
 export default function Hero() {
     return (
@@ -20,27 +20,7 @@ export default function Hero() {
                     <p className="py-6 text-xs xs:text-xl text-gray-500">
                         Support small business with simple invoicing.<br /> powerful integrations, and cash flow management tools.
                     </p>
-                    <div className="join mb-8">
-                        <div>
-                            <label className="input sm:input-lg validator join-item">
-                                <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <g
-                                        strokeLinejoin="round"
-                                        strokeLinecap="round"
-                                        strokeWidth="2.5"
-                                        fill="none"
-                                        stroke="currentColor"
-                                    >
-                                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                                    </g>
-                                </svg>
-                                <input type="email" placeholder="mail@site.com" required />
-                            </label>
-                            <div className="validator-hint hidden">Enter valid email address</div>
-                        </div>
-                        <button className="btn sm:btn-lg btn-neutral bg-second border-second shadow-none join-item"><span className="hidden xs:block"> Get Started </span><MdArrowOutward /></button>
-                    </div>
+                    <Subscribe />
                     <div className="flex justify-center flex-wrap md:justify-start gap-x-4">
                         <svg className="min-w-9" width="120" height="40" viewBox="0 0 209 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M96.8549 4.00158C96.532 6.29416 98.0206 8.00317 100.34 8.00317C102.66 8.00317 104.63 6.29416 104.953 4.00158C105.276 1.70901 103.787 0 101.467 0C99.1476 0 97.1777 1.70901 96.8549 4.00158Z" fill="#1B005E"></path>
