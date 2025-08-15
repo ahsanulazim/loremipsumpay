@@ -1,5 +1,6 @@
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
+import Mission from "./components/Mission";
 import Prefer from "./components/Prefer";
 import Returns from "./components/Returns";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Experience />
       <Prefer />
       <Returns />
+      <Mission />
     </>
   );
 }
