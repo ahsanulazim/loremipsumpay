@@ -22,7 +22,7 @@ export default function Mission() {
                 </div>
             </div>
             <h4 className="text-main font-bold mb-7 text-center">CHOOSE PLAN:</h4>
-            <div className="flex flex-col min-[670px]:flex-row items-center justify-center gap-10">
+            <div className="flex flex-col min-[670px]:flex-row items-center min-[670px]:justify-center gap-10">
                 {plan.map((i) => <PlanCard key={i.id} plan={i.title} price={i.price} active={i.active} />)}
             </div>
         </section>
