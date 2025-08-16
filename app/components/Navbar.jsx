@@ -2,6 +2,7 @@ import Link from "next/link";
 import logo from "../logo.svg";
 import mobileLogo from "../favicon.svg";
 import Image from "next/image";
+import * as motion from "motion/react-client"
 
 export default function Navbar() {
 
@@ -12,7 +13,7 @@ export default function Navbar() {
         <li><a>Learn</a></li>
     </>
     return (
-        <header className="bg-base-100 font-helvetica-display font-bold">
+        <motion.header initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { ease: "easeOut", duration: 0.7 } }} className="bg-base-100 font-helvetica-display font-bold">
             <div className="navbar max-w-[1320px] mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -38,6 +39,6 @@ export default function Navbar() {
                     <Link href="/registration" className=""><button className="btn bg-second text-white border-second rounded-md hover:bg-main hover:border-main whitespace-nowrap">Sign Up</button></Link>
                 </div>
             </div>
-        </header>
+        </motion.header>
     )
 }
